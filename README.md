@@ -47,7 +47,7 @@ from idm import IDMan
 
 downloader = IDMan()
 url = ""
-destination_path = r"c:\DOWNLOADS"
+destination_path = r"" # The folder path you want your downloading video to be saved
 
 downloader.download(url,path_to_save = destination_path, output=None, referrer=None, cookie=None, postData=None, user=None, password=None, confirm = False, lflag = None, clip=False)
 ```
@@ -60,7 +60,7 @@ from idm import IDMan
 
 url = "" # The youtube video you want to download 
 downloader = IDMan()
-destination_path = r"c:\DOWNLOADS"
+destination_path = r"" # The folder path you want your downloading video to be saved
 
 ydl_opts = {'format':'best'} # Choose the video format you want or using the best format available
             
@@ -76,5 +76,6 @@ height = info['height']
 ext = info['ext']
 download_url = info['url']
 
-downloader.download(download_url,path_to_save = destination_path, output=None, referrer=None, cookie=None, postData=None, user=None, password=None, confirm = False, lflag = None, clip=False)
+downloader.download(download_url,path_to_save = destination_path, output=f"{title}.{ext}", referrer= url, cookie=None, postData=None, user=None, password=None, confirm = False, lflag = None, clip=False)
+
 ```
