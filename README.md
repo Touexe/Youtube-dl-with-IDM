@@ -42,7 +42,7 @@ downloader = IDMan()
 url = ""
 destination_path = r"c:\DOWNLOADS"
 
-downloader.download(url,destination_path, output=None, referrer=None, cookie=None, postData=None, user=None, password=None, confirm = False, lflag = None, clip=False)
+downloader.download(url,path_to_save = destination_path, output=None, referrer=None, cookie=None, postData=None, user=None, password=None, confirm = False, lflag = None, clip=False)
 ```
 
 Using Youtube-dl with IDM
@@ -68,5 +68,6 @@ width = info['width']
 height = info['height']
 ext = info['ext']
 download_url = info['url']
-downloader.download(download_url,destination_path, output=None, referrer=None, cookie=None, postData=None, user=None, password=None, confirm = False, lflag = None, clip=False)
+
+downloader.download(download_url,path_to_save = destination_path, output=None, referrer=None, cookie=None, postData=None, user=None, password=None, confirm = False, lflag = None, clip=False)
 ```
