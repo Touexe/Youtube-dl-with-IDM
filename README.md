@@ -25,7 +25,7 @@ Getting download url using youtube-dl
 import youtube_dl
 
 url = "" # The youtube video you want to download 
-ydl_opts = {'format':'best'} 
+ydl_opts = {'format':'best'}  # Choose the video format you want or using the best format available by default
             
 def extractor(url):
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
@@ -62,7 +62,7 @@ url = "" # The youtube video you want to download
 downloader = IDMan()
 destination_path = r"" # The folder path you want your downloading video to be saved
 
-ydl_opts = {'format':'best'} # Choose the video format you want or using the best format available
+ydl_opts = {'format':'best'} # Choose the video format you want or using the best format available by default
             
 def extractor(url):
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
