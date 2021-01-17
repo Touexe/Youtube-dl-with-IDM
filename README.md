@@ -1,5 +1,13 @@
 # Youtube-dl-with-IDM
+Download video using youtube-dl and idm as downloader
 
+# Requirements
+ - Python 3.x
+ - Internet Download Manager
+ - youtube_dl
+ - idm
+ 
+# Installation
 Install youtube_dl
 
 ```
@@ -17,8 +25,7 @@ Getting download url using youtube-dl
 import youtube_dl
 
 url = "" # The youtube video you want to download 
-ydl_opts = {'outtmpl':'%(id)s.%(ext)s',
-            'format':'best'} 
+ydl_opts = {'format':'best'} 
             
 def extractor(url):
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
