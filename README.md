@@ -1,5 +1,5 @@
 # Youtube-dl-with-IDM
-Download any video from supported site by youtube-dl with IDM as downloader
+Download any video from supported sites by youtube-dl with IDM as downloader
 
 # Requirements
  - Python 3.x
